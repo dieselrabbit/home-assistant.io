@@ -43,6 +43,16 @@ Sets the operation of any connected color-capable lights.
 | `target`               | no       | An `area` containing the ScreenLogic device, the ScreenLogic `device` itself, or any `entity` from the ScreenLogic device you wish to set the color mode on. |
 | `color_mode`           | no       | The color mode to set. Valid values are listed below.                                                                                                        |
 
+### `screenlogic.set_scg`
+
+Sets the runtime percentages of an attached Salt Chlorine Generator for the pool or spa.
+
+| Service data attribute | Optional | Description                                                                                                                                                  |
+| ---------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `target`               | no       | An `area` containing the ScreenLogic device, the ScreenLogic `device` itself, or any `entity` from the ScreenLogic device you wish to set the color mode on. |
+| `pool_percent`         | yes      | The runtime percentage for the salt chlorine generator when in pool mode                                                                                     |
+| `spa_percent`          | yes      | The runtime percentage for the salt chlorine generator when in spa mode. Value is treated as a percentage of the pool runtime.                               |
+
 ## Reference
 
 ### Color Modes
